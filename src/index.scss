@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+*,*::after,*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  line-height: 1.3rem;
+  letter-spacing: .05rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+  tab-size: 2;
+  font-weight: 375;
+  letter-spacing: -0.005em;
+}
+
+
+body {
+  @apply bg-main-900;
+  height: 100%;
+  width: 100%;
+  
+
+}
+
+:root {
+  --main-900: #0d1117;
+  --main-800:#141a24;
+  --main-700: #1b2430;
+  --main-600: #222d3d;
+  --main-500: #293649;
+  --main-200: #ffffff;
+  
+
+  --additional-900: #2ea043;
+  --additional-800: #26a83e;
+  --additional-700: #1eb039;
+  --additional-600: #41c85a;
+  --additional-500: #50cd67;
+  --additional-200: #5fd174;
+
+  --complimentary-900: #7028eb;
+  --complimentary-800: #7c3aed;
+  --complimentary-700: #884cef;
+  --complimentary-600: #945ef0;
+  --complimentary-500: #a070f2;
+  --complimentary-200: #c4a6f7;
+
+  --secondary-900: #ec6547; 
+  --secondary-800: #ee7459; 
+  --secondary-700: #f0836b; 
+  --secondary-600: #f2927c; 
+  --secondary-500: #f3a18e; 
+  --secondary-200: #f7beb2; 
+
+  --box-bg: #161b22;
+}
+
+a {
+  appearance: none;
+  text-decoration: none;
+  outline: none;
+}
+
+input, button {
+  outline: none;
+  appearance: none;
+}
+a:focus-visible, 
+button:focus-visible {
+
+}
+
