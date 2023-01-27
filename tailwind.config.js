@@ -40,7 +40,12 @@ module.exports = {
                     800: "var(--main-800)",
                     900: "var(--main-900)"
                 },
-                'box-bg': "var(--box-bg)"
+                'box-bg': "var(--box-bg)",
+                'syntax-highlight': 'var(--syntax-highlight)',
+                'syntax-keyword': 'var(--syntax-keyword)',
+                'syntax-func': 'var(--syntax-func)',
+                'syntax-arg': 'var(--syntax-arg)',
+                'syntax-string': 'var(--syntax-string)'
 
             },
             boxShadow: {

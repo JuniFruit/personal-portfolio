@@ -1,0 +1,26 @@
+.universal {
+    @apply w-1;
+}
+
+.default {
+    background: linear-gradient(var(--main-900), var(--complimentary-900), var(--complimentary-200));
+}
+
+.compl_to_additional {
+    background: linear-gradient(var(--complimentary-900), var(--complimentary-200), var(--additional-200), var(--additional-900));
+}
+.compl_to_secondary {
+    background: linear-gradient(var(--complimentary-900), var(--complimentary-200), var(--secondary-200), var(--secondary-900));
+}
+.secondary_to_compl {
+    background: linear-gradient(var(--secondary-900), var(--secondary-200), var(--complimentary-200), var(--complimentary-900));
+}
+.secondary_to_additional {
+    background: linear-gradient(var(--secondary-900), var(--secondary-200), var(--additional-200), var(--additional-900));
+}
+.additional_to_compl {
+    background: linear-gradient(var(--additional-900), var(--additional-200), var(--complimentary-200), var(--complimentary-900));
+}
+.additional_to_secondary {
+    background: linear-gradient(var(--additional-900), var(--additional-200), var(--secondary-200), var(--secondary-900));
+}

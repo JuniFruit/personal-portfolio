@@ -1,0 +1,8 @@
+
+
+.links_list {
+    @apply flex gap-2 flex-nowrap items-center;
+    >li {
+        @apply flex items-center;
+    }
+}

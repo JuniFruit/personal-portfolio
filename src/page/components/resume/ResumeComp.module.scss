@@ -1,0 +1,10 @@
+
+
+.wrapper {
+    @apply text-main-200 flex gap-10 items-center;
+
+    >h2 {
+        @apply font-bold opacity-70 text-xl;
+    }
+
+}

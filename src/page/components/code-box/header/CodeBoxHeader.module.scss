@@ -1,0 +1,31 @@
+
+
+.wrapper {
+    @apply w-full h-16 p-1 flex items-center justify-between bg-box-bg rounded-t-lg border border-gray-700;
+
+    .right_elements,
+    .left_elements {
+        @apply text-main-200 opacity-60;
+        >svg {
+            @apply w-8 h-8;
+        }
+    }
+
+    .right_elements {
+        @apply mr-5;
+    }
+
+    .left_elements {
+        @apply ml-5;
+    }
+
+    .title {
+        @apply text-main-200 bg-main-900 rounded-md px-2 py-1;
+
+        >h2 {
+            @apply text-sm;
+            font-weight: 300;
+        }
+    }
+    
+}

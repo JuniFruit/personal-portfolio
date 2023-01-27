@@ -1,0 +1,9 @@
+
+
+.wrapper {
+    @apply text-main-200 bg-box-bg border-gray-700 w-16 p-3 flex flex-col border justify-start items-center;
+
+    >svg {
+        @apply w-10 h-10 opacity-70;
+    }
+}

@@ -22,12 +22,10 @@
   },
   "typeRoots": [
     "node_modules/@types",
-    "custom-types/"
   ],
   "include": [
     "**/*.ts",
-    "**/*.tsx",
-    "custom-types"
+    "**/*.tsx"
   ],
   "exclude": [
     "node_modules"

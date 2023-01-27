@@ -1,0 +1,15 @@
+
+
+.icon_main {
+    @apply text-main-200 w-10 h-10 flex justify-center items-center relative;
+
+    >span {
+        @apply w-10 h-10 absolute rounded-full ;
+        background-color: var(--complimentary-200);
+        filter: blur(17px);
+    }
+
+    >svg {
+        @apply w-full h-full absolute z-10;
+    }
+}

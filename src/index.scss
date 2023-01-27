@@ -2,7 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'P22MackinacPro';
+  src: local('assets'), url(./assets/fonts/Mackinac/P22MackinacPro-Book_25.otf) format('opentype');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
+@font-face {
+  font-family: 'P22MackinacPro';
+  src: local('assets'), url(./assets/fonts/Mackinac/P22MackinacPro-Medium_26.otf) format('opentype');
 
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'P22MackinacPro';
+  src: local('assets'), url(./assets/fonts/Mackinac/P22MackinacPro-Bold_16.otf) format('opentype');
+
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'P22MackinacPro';
+  src: local('assets'), url(./assets/fonts/Mackinac/P22MackinacPro-ExtraBold_12.otf) format('opentype');
+
+  font-weight: bolder;
+}
 
 
 *,*::after,*::before {
@@ -11,8 +34,15 @@
   padding: 0;
 }
 
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+}
+
 html {
-  line-height: 1.3rem;
+  line-height: 1.3rem;  
   letter-spacing: .05rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -25,10 +55,6 @@ html {
 
 body {
   @apply bg-main-900;
-  height: 100%;
-  width: 100%;
-  
-
 }
 
 :root {
@@ -61,7 +87,12 @@ body {
   --secondary-500: #f3a18e; 
   --secondary-200: #f7beb2; 
 
-  --box-bg: #161b22;
+  --box-bg: #171c23d6;
+  --syntax-highlight: #66d9ef;
+  --syntax-func: #a6e231;
+  --syntax-keyword: #f92649;
+  --syntax-arg: #fd8c2b;
+  --syntax-string: #e6db74;
 }
 
 a {

@@ -1,4 +1,15 @@
 
-.wrapper {
-    @apply p-2;
+
+.container {
+    @apply p-3 w-full h-full;
+
+    .wrapper {
+        @apply mx-auto w-full h-full;
+        max-width: 1200px;
+
+        >main {
+            @apply w-full h-full;
+        }
+    }
+
 }

@@ -1,0 +1,19 @@
+.button_main {
+    @apply py-1.5 rounded-md px-5 text-main-200 bg-complimentary-600 transition-all duration-200 relative;
+    font-weight: 600;
+    background: linear-gradient(180deg, var(--complimentary-500), var(--complimentary-900));
+
+    @media (hover: hover) {
+        &:hover {
+            box-shadow: 0 .15rem 1rem rgba(255, 255, 255, 0.3);
+        }
+    }   
+
+    @screen md {
+        @apply text-sm;
+    }
+
+    &:disabled {
+        @apply text-main-200 bg-main-500 opacity-60;
+    }   
+}

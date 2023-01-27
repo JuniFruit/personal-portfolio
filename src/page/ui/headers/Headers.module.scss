@@ -1,0 +1,38 @@
+.heading_main {
+    @apply break-words h-28 flex items-center; 
+    font-family: 'P22MackinacPro';
+    font-size: 5rem;
+    letter-spacing: -0.05rem;
+    line-height: 3rem;
+    font-weight: bolder;
+    background-image: linear-gradient(0deg, var(--complimentary-900) 30%, var(--complimentary-500));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.heading_sub {
+    @apply text-2xl opacity-70 break-words;
+    font-family: 'P22MackinacPro';
+    font-weight: bold;
+}
+
+.heading_section {
+    @apply text-2xl text-main-200 break-words;
+}
+
+.section_subheading {
+    @apply text-4xl text-main-200 font-semibold;
+    line-height: 2.5rem;
+
+    .main {
+        @apply text-main-500;
+    }
+    .additional {
+        @apply text-additional-500
+    }
+    .secondary {
+        @apply text-secondary-500;
+    }
+    .complimentary {
+        @apply text-complimentary-500;
+    }
+}

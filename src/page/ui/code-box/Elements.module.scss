@@ -1,0 +1,40 @@
+
+
+.tab_wrapper {
+    @apply text-main-200 border-t border-gray-700 rounded-t-md bg-main-900 
+    flex items-center justify-center py-1 px-3 select-none;
+    >h3 {
+        @apply text-sm opacity-90;
+        font-weight: 200;
+       
+    }
+}
+
+.const_wrapper {
+    @apply text-main-200 flex gap-3;
+}
+
+.syntax {
+    @apply text-syntax-highlight;
+}
+.keyword {
+    @apply text-syntax-keyword;
+}
+
+.string {
+    @apply text-syntax-string;
+}
+
+.default {
+    @apply text-main-200;
+}
+
+.code_line_wrapper {
+    @apply flex flex-nowrap gap-3;
+
+    >.num {
+        @apply w-5 text-main-200 opacity-30 text-tiny flex items-center justify-center;
+        font-family: 'P22MackinacPro';
+     
+    }
+}
