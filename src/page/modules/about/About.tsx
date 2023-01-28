@@ -10,7 +10,7 @@ const About: FC = () => {
 
     return (
         <div className={styles.section_wrapper}>
-            <IconGlow>
+            <IconGlow bgGlow="additional">
                 <IoInformation />
             </IconGlow>
             <HeadingSection>

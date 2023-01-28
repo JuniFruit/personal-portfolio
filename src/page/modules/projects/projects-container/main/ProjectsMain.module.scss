@@ -1,0 +1,10 @@
+
+
+.main_wrapper {
+    @apply grid py-4 pl-8 gap-5 relative;
+    grid-template-columns: repeat(2, 1fr);
+
+    >div:last-child {
+        @apply justify-self-center sticky top-5;
+    }
+}

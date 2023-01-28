@@ -11,11 +11,11 @@ const Resume: FC = () => {
 
     return (
         <section className={styles.section_wrapper}>
-            <IconGlow>
+            <IconGlow bgGlow="complimentary">
                 <IoDocumentTextOutline />
             </IconGlow>
             <ResumeComp />
-            <Line colors="compl_to_additional" />
+            <Line />
         </section>
     )
 }

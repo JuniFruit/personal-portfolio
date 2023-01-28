@@ -1,0 +1,17 @@
+
+
+.wrapper {
+    @apply flex flex-col border-r border-gray-700;
+
+    .terminal_header {
+        @apply bg-box-bg h-10 flex gap-2 items-end justify-start pl-5;
+        >span {
+            @apply text-main-200 opacity-70 py-1 px-2 text-tiny;
+            font-weight: 200;
+            letter-spacing: 0.05rem;
+        }
+        >span:first-child {
+            @apply opacity-100;
+        }
+    }
+}

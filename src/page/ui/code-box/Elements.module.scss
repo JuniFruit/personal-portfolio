@@ -15,7 +15,8 @@
 }
 
 .syntax {
-    @apply text-syntax-highlight;
+    @apply text-syntax-highlight italic;
+    font-weight: lighter
 }
 .keyword {
     @apply text-syntax-keyword;
@@ -31,10 +32,21 @@
 
 .code_line_wrapper {
     @apply flex flex-nowrap gap-3;
+    font-family: 'OperatorMono';
 
     >.num {
         @apply w-5 text-main-200 opacity-30 text-tiny flex items-center justify-center;
-        font-family: 'P22MackinacPro';
+        font-weight: lighter;
      
     }
+}
+
+.func_name {
+    @apply text-additional-200 italic font-light;
+    font-style: normal;
+}
+
+.arg {
+    @apply text-syntax-arg;
+
 }

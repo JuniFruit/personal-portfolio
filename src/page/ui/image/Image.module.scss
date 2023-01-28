@@ -1,0 +1,12 @@
+
+
+.rotated_wrapper {
+    @apply bg-transparent overflow-hidden rounded-lg p-5 animate-scaleIn;
+    max-width: 38rem;
+    max-height: 28rem;
+    perspective: 1000px;
+    >img {
+        @apply object-contain;
+        transform: rotateY(-10deg);
+    }
+}

@@ -1,0 +1,24 @@
+
+
+.wrapper {
+    @apply flex flex-col border-r border-gray-700;
+    .header {
+        @apply bg-box-bg h-12 flex  items-center justify-between px-5 py-1;       
+    }
+
+    .placeholder {
+        @apply text-main-200 opacity-70 h-6 w-6;
+        >svg {
+            @apply w-full h-full;
+        }
+    }
+    .content {
+        @apply flex items-center justify-center h-full;
+        background: linear-gradient(0deg, var(--complimentary-200), var(--main-900));
+        background-size: 100%;
+        .img_container {
+            
+            @apply rounded-full overflow-hidden w-80 h-80;
+        }
+     }
+}

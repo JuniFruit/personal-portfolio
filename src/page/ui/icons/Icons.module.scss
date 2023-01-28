@@ -12,4 +12,14 @@
     >svg {
         @apply w-full h-full absolute z-10;
     }
+
+    .additional {
+        @apply bg-additional-200;
+    }
+    .complimentary {
+        @apply bg-complimentary-200;
+    }
+    .secondary {
+        @apply bg-secondary-200;
+    }
 }

@@ -1,7 +1,7 @@
 
 
 .section_wrapper {
-    @apply grid h-full;
+    @apply grid;
     grid-template-columns:  8% 1fr;
     grid-template-rows: 10rem 10rem;
 
@@ -24,7 +24,7 @@
         @apply justify-self-center;
         grid-row: 2 ;
         grid-column: 1;
-        background: linear-gradient(var(--additional-900), var(--additional-200), var(--additional-200), var(--additional-900));
+        background: linear-gradient(var(--additional-200), var(--additional-900), var(--main-900));
 
     }
 }

@@ -3,7 +3,7 @@ import { IoCodeOutline, IoLogoJavascript } from 'react-icons/io5';
 import styles from './CodeBoxHeader.module.scss';
 
 
-const CodeBoxHeader: FC = () => {
+const CodeBoxHeader: FC<{ title: string }> = ({ title }) => {
     return (
         <div className={styles.wrapper}>
             <div className={styles.left_elements}>
@@ -11,7 +11,7 @@ const CodeBoxHeader: FC = () => {
             </div>
             <div className={styles.title}>
                 <h2>
-                    {`${'About Me'}.module.js - Code Studio`}
+                    {`${title}.module.js - Code Studio`}
                 </h2>
             </div>
             <div className={styles.right_elements}>

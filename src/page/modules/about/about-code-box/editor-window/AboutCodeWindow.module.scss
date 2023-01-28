@@ -1,0 +1,22 @@
+
+
+.wrapper {
+    @apply px-6 py-4 bg-main-900 overflow-x-hidden;
+
+    >.content > div > p {
+        @apply text-main-200 ml-10  flex items-center gap-2 flex-nowrap;
+        font-family: 'OperatorMono';
+        white-space: nowrap;
+        .string {
+            @apply text-syntax-string;        
+        }
+        .keyword {
+            @apply text-syntax-keyword;
+        }
+        .num {
+            @apply text-complimentary-200;
+        }
+    }
+    
+
+}

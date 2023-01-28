@@ -70,6 +70,16 @@ module.exports = {
                         opacity: 1,
                         transform: 'scale(1)'
                     }
+                },
+                enterFromBottom: {
+                    "0%": {
+                        opacity: 0,
+                        transform: 'translateY(100%)'
+                    },
+                    "100%": {
+                        opacity: 1,
+                        transform: 'translateY(0%)'
+                    }
                 }
             },
             fontSize: {
@@ -90,6 +100,7 @@ module.exports = {
             animation: {
                 fadeIn: 'fadeIn .5s ease-in-out',
                 scaleIn: 'scaleIn .35s ease-in-out',
+                enterFromBottom: 'enterFromBottom .5s ease-in-out'
 
             },
             fontFamily: {
@@ -97,17 +108,4 @@ module.exports = {
             }
         },
     },
-    // plugins: [
-    //     plugin(({ addComponents }) => {
-    //         addComponents({
-    //             '.shadow-block': {
-    //                 display: 'block',
-    //                 boxShadow:
-    //                     '0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)',
-    //                 animation: 'scaleIn .35s ease-in-out',
-    //                 backgroundColor: '#272532'
-    //             }
-    //         })
-    //     })
-    // ],
 }

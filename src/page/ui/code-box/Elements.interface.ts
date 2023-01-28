@@ -10,3 +10,8 @@ export interface IConstEl {
 export interface ICodeLine {
     lineNum: number;
 }
+
+export interface IFuncEl {
+    funcName: string;
+    arg: string;
+}

@@ -15,24 +15,29 @@
     font-weight: bold;
 }
 
-.heading_section {
+.heading_section,
+.code_heading {
     @apply text-2xl text-main-200 break-words;
+}
+
+.code_heading {
+    @apply text-base;
+    font-weight: 500
 }
 
 .section_subheading {
     @apply text-4xl text-main-200 font-semibold;
-    line-height: 2.5rem;
-
-    .main {
-        @apply text-main-500;
-    }
-    .additional {
-        @apply text-additional-500
-    }
-    .secondary {
-        @apply text-secondary-500;
-    }
-    .complimentary {
-        @apply text-complimentary-500;
-    }
+    line-height: 2.5rem;    
+}
+.main {
+    @apply text-main-500;
+}
+.additional {
+    @apply text-additional-500
+}
+.secondary {
+    @apply text-secondary-500;
+}
+.complimentary {
+    @apply text-complimentary-200;
 }

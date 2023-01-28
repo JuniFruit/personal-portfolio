@@ -26,6 +26,45 @@
 
   font-weight: bolder;
 }
+@font-face {
+  font-family: 'OperatorMono';
+  src: local('assets'), url(./assets/fonts/OperatorMono/OperatorMono-Light.otf) format('opentype');
+
+  font-weight: lighter;
+}
+@font-face {
+  font-family: 'OperatorMono';
+  src: local('assets'), url(./assets/fonts/OperatorMono/OperatorMono-LightItalic.otf) format('opentype');
+
+  font-weight: lighter;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'OperatorMono';
+  src: local('assets'), url(./assets/fonts/OperatorMono/OperatorMono-Medium.otf) format('opentype');
+
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'OperatorMono';
+  src: local('assets'), url(./assets/fonts/OperatorMono/OperatorMono-MediumItalic.otf) format('opentype');
+
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'OperatorMono';
+  src: local('assets'), url(./assets/fonts/OperatorMono/OperatorMono-Bold.otf) format('opentype');
+
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'OperatorMono';
+  src: local('assets'), url(./assets/fonts/OperatorMono/OperatorMono-BoldItalic.otf) format('opentype');
+
+  font-weight: bold;
+  font-style: italic;
+}
 
 
 *,*::after,*::before {

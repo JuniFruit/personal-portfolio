@@ -1,0 +1,13 @@
+
+
+.terminal_wrapper {
+    @apply py-2 text-tiny px-6 text-main-200 bg-box-bg flex flex-col gap-1 border-b border-gray-700;
+    letter-spacing: 0.05rem;;
+    font-weight: 300;
+    >span:first-child {
+        @apply opacity-70;
+    }
+    .second_span {
+        @apply text-additional-500;
+    }
+} 

@@ -1,6 +1,7 @@
 
 
-.link {
+.link,
+.icon_link {
     @apply text-main-200 flex justify-center items-center transition-colors duration-150;
     font-weight: 500;
     letter-spacing: 0.05rem;
@@ -8,4 +9,13 @@
     @media (hover: hover) {
         @apply hover:text-complimentary-200;
     }
+ }
+
+ .icon_link {  
+    @apply cursor-pointer h-6 w-6;
+
+    >svg {
+        @apply w-full h-full;
+    }
+ 
  }
