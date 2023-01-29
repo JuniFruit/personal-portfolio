@@ -9,8 +9,9 @@ export const ProjectsList: FC<IProjectList> = ({ onItemClick, onItemHover }) => 
     return (
         <div className={styles.wrapper}>
             {
-                projectList.map(project => (
+                projectList.map((project, ind) => (
                     <ProjectItem
+                        key={ind}
                         {...{ ...project }}
                         onClick={() => onItemClick(project.link)}
                         onMouseOver={() => onItemHover(project.imgSrc)}

@@ -5,7 +5,7 @@ import styles from './Hero.module.scss';
 
 const Hero: FC = () => {
     return (
-        <section className={styles.section_wrapper}>
+        <section className={styles.section_wrapper} id='home'>
             <div className={styles.img_container}>
 
             </div>

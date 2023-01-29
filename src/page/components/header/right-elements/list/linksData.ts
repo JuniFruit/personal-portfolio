@@ -4,19 +4,23 @@ import { ILinkDataItem } from "./Links.interface";
 export const linksData: ILinkDataItem[] = [
     {
         title: "About",
-        href: "#"
+        href: "#about"
     },
     {
         title: "Projects",
-        href: "#"
+        href: "#projects"
     },
     {
         title: "Skills",
-        href: "#"
+        href: "#skills"
+    },
+    {
+        title: "Education",
+        href: "#education"
     },
     {
         title: "Contact",
-        href: "#"
+        href: "#contact"
     }
 
 ]

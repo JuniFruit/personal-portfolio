@@ -1,0 +1,13 @@
+
+
+.wrapper {
+
+    @apply bg-box-bg border border-gray-700 rounded-lg flex gap-4 px-6 py-4 overflow-hidden;
+    max-height: 450px;
+    >div:first-child {
+        @apply w-1/2
+    }
+    >div:last-child {
+        @apply w-1/2
+    }
+}

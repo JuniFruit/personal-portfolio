@@ -1,33 +1,33 @@
-import { FC } from 'react'
-import IconGlow from '../../ui/icons/IconGlow';
-import { GiIfrit } from 'react-icons/gi';
-import { Line } from '../../ui/line/Line';
-import styles from './Skills.module.scss';
+import { FC } from 'react';
+import { IoMailOutline } from 'react-icons/io5';
 import HeadingSection from '../../ui/headers/HeadingSection';
 import SectionSubHeading from '../../ui/headers/SectionSubHeading';
-import SkillsBox from './skills-box/SkillsBox';
+import IconGlow from '../../ui/icons/IconGlow';
+import { Line } from '../../ui/line/Line';
+import ContactBox from './contact-box/ContactBox';
+import styles from './Contact.module.scss';
 
-const Skills: FC = () => {
+const Contact: FC = () => {
     return (
-        <section id='skills'>
+        <section id='contact'>
             <div className={styles.section_wrapper}>
                 <Line />
                 <IconGlow bgGlow="complimentary">
-                    <GiIfrit />
+                    <IoMailOutline />
                 </IconGlow>
                 <HeadingSection>
-                    Skills
+                    Contact
                 </HeadingSection>
                 <SectionSubHeading
-                    textAccent='Technologies I use for my projects'
+                    textAccent='Contact me using form below'
                     textMain=''
                     accentColor="complimentary"
                 />
                 <Line />
             </div>
-            <SkillsBox />
+            <ContactBox />
         </section>
     )
 }
 
-export default Skills
+export default Contact

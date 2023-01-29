@@ -1,0 +1,46 @@
+.input {
+    @apply relative block;
+
+    .title {
+        @apply mb-2 text-main-200 opacity-90;
+        font-size: .85rem;
+        font-weight: 600;
+        @screen sm {
+            @apply text-sm;
+        }
+    }
+
+    >input {
+        @apply rounded-lg py-2 px-1 outline-none 
+        appearance-none block text-main-200 opacity-70 shadow-md transition-shadow bg-main-700 w-full;
+        
+        &:focus {
+            @apply shadow outline-none opacity-100
+        }
+        
+        &::placeholder {
+            @apply text-main-200 opacity-40;
+            font-size: .75rem;
+
+            @screen sm {
+                @apply text-sm;
+            }
+           
+        }
+
+        @screen sm {
+            @apply py-3 px-2;
+        }
+    }
+
+
+}
+
+.error {
+    @apply mt-1 ml-1 text-red-400;
+    font-size: .75rem;
+
+    @screen md {
+        font-size: .85rem;
+    }
+}

@@ -4,9 +4,9 @@ import styles from './Logo.module.scss';
 
 const Logo: FC = () => {
     return (
-        <a href='#' className={styles.logo}>
+        <button onClick={() => window.scrollTo(0, 0)} className={styles.logo}>
             <IoHome />
-        </a>
+        </button>
     )
 }
 

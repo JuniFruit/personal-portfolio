@@ -6,7 +6,10 @@
     max-height: 28rem;
     perspective: 1000px;
     >img {
-        @apply object-contain;
         transform: rotateY(-10deg);
     }
+}
+
+.img_element {
+    @apply object-contain;
 }

@@ -1,6 +1,6 @@
 import { FC, useState, useCallback } from 'react'
 import { images } from '../../../../../assets/images/images';
-import { RotatedImage } from '../../../../ui/image/RotatedImage';
+import { RotatedImage } from '../../../../ui/image/rotated/RotatedImage';
 import { ProjectsList } from './list/ProjectsList';
 import styles from "./ProjectsMain.module.scss";
 

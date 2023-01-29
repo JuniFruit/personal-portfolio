@@ -1,0 +1,20 @@
+
+
+.wrapper {
+    @apply text-main-200  ml-10 my-6;
+
+    >h2 {
+        @apply text-2xl font-bold my-6;
+        letter-spacing: 0.025rem;
+    }
+
+    >ul {
+        @apply opacity-70 ml-6;
+        font-weight: 600;
+
+        >li {
+            @apply my-1;
+            list-style: disc;
+        }
+    }
+}

@@ -1,12 +1,11 @@
-import { FC } from 'react'
+import { FC } from 'react';
 import CodeHeading from '../../../ui/headers/CodeHeading';
 import ProjectsMain from './main/ProjectsMain';
-import styles from './ProjectsContainer.module.scss';
 
 
 const ProjectsContainer: FC = () => {
     return (
-        <div className={styles.container_wrapper}>
+        <div className='ml-5'>
             <CodeHeading accentColor="secondary">
                 Projects
             </CodeHeading>
