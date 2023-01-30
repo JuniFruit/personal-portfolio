@@ -7,7 +7,10 @@
         &:hover {
             box-shadow: 0 .15rem 1rem rgba(255, 255, 255, 0.3);
         }
-    }   
+    }  
+    &:focus {
+        box-shadow: 0 .15rem 1rem rgba(255, 255, 255, 0.3);
+    } 
 
     @screen md {
         @apply text-sm;
@@ -27,4 +30,34 @@
             filter: blur(5px);
         }
     }
+    &:focus {           
+        box-shadow: 0 0 1rem rgba(255, 255, 255, 0.2);
+        filter: blur(5px);
+    }
+}
+
+.button_refer {
+    
+    @apply py-1.5 px-5 text-main-200 font-bold bg-transparent transition-all duration-200 flex gap-2 items-center
+    border-2 border-complimentary-500 rounded-md;
+
+    >svg {
+        @apply w-2 h-5 transition-all duration-200;
+        object-fit: fill;
+    }
+    @media (hover: hover) {
+        &:hover {           
+            @apply border-main-200;
+            >svg {
+                @apply w-5 h-5;
+            }
+        }
+    }
+    &:focus {
+        @apply border-main-200;
+            >svg {
+                @apply w-5 h-5;
+            }
+    }
+
 }

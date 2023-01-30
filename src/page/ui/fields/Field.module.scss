@@ -1,46 +1,77 @@
 .input {
-    @apply relative block;
+    @apply relative flex flex-col;
+    min-height: 4rem;
 
     .title {
-        @apply mb-2 text-main-200 opacity-90;
-        font-size: .85rem;
-        font-weight: 600;
-        @screen sm {
-            @apply text-sm;
-        }
+        @apply text-main-200 transition-all text-sm duration-200 px-1 absolute top-2 left-0;
+        font-weight: 500;
+        
     }
 
-    >input {
-        @apply rounded-lg py-2 px-1 outline-none 
-        appearance-none block text-main-200 opacity-70 shadow-md transition-shadow bg-main-700 w-full;
-        
-        &:focus {
-            @apply shadow outline-none opacity-100
-        }
-        
+    >input,
+    >textarea {
+        @apply rounded-lg py-1 px-1 outline-none relative z-10 
+        appearance-none block text-main-200 bg-transparent w-full;
+
         &::placeholder {
-            @apply text-main-200 opacity-40;
-            font-size: .75rem;
-
-            @screen sm {
-                @apply text-sm;
-            }
-           
+            @apply text-transparent;
+        }        
+       
+        &:focus ~ h3,
+        &:not(:placeholder-shown) ~ h3 {
+            @apply text-tiny text-complimentary-200 top-0;
+            transform: translateY(-100%);
         }
-
-        @screen sm {
-            @apply py-3 px-2;
+        &:invalid ~ span {
+            @apply bg-secondary-200;
         }
+        &:valid ~ span {
+            @apply bg-complimentary-500;
+        }
+        &::-webkit-scrollbar {
+            @apply bg-complimentary-500;
+        }
+        &::-webkit-scrollbar-thumb {
+            @apply bg-complimentary-200;
+        }
+        &::-webkit-scrollbar-corner {
+            @apply bg-secondary-200;
+        }
+        
+       
     }
+
+    >textarea {
+        min-height: 2rem;
+        max-height: 10rem;
+    }
+    span {
+        @apply w-full bg-complimentary-500 left-0 bottom-0 rounded-sm;
+        height: 2px;
+    }
+
+    
 
 
 }
 
-.error {
-    @apply mt-1 ml-1 text-red-400;
-    font-size: .75rem;
+.error_text {
+    @apply text-red-400 text-tiny;  
+    
 
-    @screen md {
-        font-size: .85rem;
-    }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    @apply bg-black border-none rounded-none py-1;
+  -webkit-box-shadow: none;
+  -webkit-text-fill-color: var(--main-200);
+  -webkit-box-shadow: 0 0 0px 1000px var(--main-900) inset;
 }

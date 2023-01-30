@@ -1,12 +1,14 @@
 
 
 .container {
-    @apply p-3 w-full h-full;
+    @apply px-3 py-6 w-full h-full;
 
     .wrapper {
         @apply mx-auto w-full h-full;
         max-width: 1200px;
-
+        >header {
+            @apply px-6;
+        }
         >main {
             @apply w-full h-full;
         }

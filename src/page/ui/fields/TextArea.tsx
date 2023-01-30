@@ -1,13 +1,14 @@
+
+import { ITextArea } from "./Field.interface";
 import { forwardRef } from "react";
-import { IField } from "./Field.interface";
 import styles from './Field.module.scss';
 
-const Field = forwardRef<HTMLInputElement, IField>(
-    ({ error, type = 'text', style, fieldTitle, ...rest }, ref) => {
-
+const TextArea = forwardRef<HTMLTextAreaElement, ITextArea>(
+    ({ error, style, fieldTitle, ...rest }, ref) => {
         return (
+
             <div className={styles.input} style={style}>
-                <input ref={ref} type={type} {...rest}></input>
+                <textarea ref={ref} {...rest}></textarea>
                 {fieldTitle && <h3 className={styles.title}>{fieldTitle}</h3>}
                 <span ></span>
                 {error && <div className={styles.error_text}>{error.message}</div>}
@@ -16,4 +17,4 @@ const Field = forwardRef<HTMLInputElement, IField>(
     }
 )
 
-export default Field
+export default TextArea

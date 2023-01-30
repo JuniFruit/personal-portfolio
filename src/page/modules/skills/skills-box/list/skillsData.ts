@@ -27,6 +27,9 @@ export const skillList: ISkillListItem[] = [
         title: "Node Express"
     },
     {
+        title: "Git"
+    },
+    {
         title: "TypeORM"
     },
     {

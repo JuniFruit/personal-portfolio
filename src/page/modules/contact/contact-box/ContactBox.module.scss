@@ -1,0 +1,12 @@
+
+
+.wrapper {
+    @apply ml-5;
+
+    .form_wrapper {
+        @apply w-full my-10;
+        >form {
+            @apply mx-auto;
+        }
+    }
+}

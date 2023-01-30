@@ -19,7 +19,12 @@ export const ProjectItem: FC<IProjectItem> = ({ title, shortDescription, gitHubL
                     {shortDescription}
                 </p>
             </div>
-            <IconLink href={gitHubLink} target={'_blank'}>
+            <IconLink
+                href={gitHubLink}
+                target={'_blank'}
+                title={`${title} repository`}
+                aria-label={`Go to ${title} github repository`}
+            >
                 <IoLogoGithub />
             </IconLink>
             <span className={styles.curtain}></span>

@@ -1,0 +1,20 @@
+
+
+form {
+    @apply  flex flex-col gap-5 p-2;
+    max-width: 30rem;
+    .form_top {
+        @apply flex flex-col gap-3;
+        .credentials {
+            @apply flex gap-3;
+            >div:first-child,
+            >div:last-child {
+                @apply w-1/2;
+            }
+        }
+        
+    }
+    >button {
+        @apply w-min mx-auto;
+    }
+}
