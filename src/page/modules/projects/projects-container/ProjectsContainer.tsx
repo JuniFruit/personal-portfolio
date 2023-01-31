@@ -5,7 +5,7 @@ import ProjectsMain from './main/ProjectsMain';
 
 const ProjectsContainer: FC = () => {
     return (
-        <div className='ml-5'>
+        <div className='ml-1 max-w-screen-md:ml-5'>
             <CodeHeading accentColor="secondary">
                 Projects
             </CodeHeading>

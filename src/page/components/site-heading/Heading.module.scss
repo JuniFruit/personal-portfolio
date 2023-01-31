@@ -1,6 +1,9 @@
 
 
-.heading {
-    @apply text-main-200;
-   
+.wrapper {
+    @apply flex flex-col gap-5;
+
+    >h1 {
+        @apply py-2;
+    }
 }

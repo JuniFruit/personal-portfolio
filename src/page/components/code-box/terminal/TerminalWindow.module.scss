@@ -13,5 +13,13 @@
         >span:first-child {
             @apply opacity-100;
         }
+        >span:last-child {
+            @apply hidden;
+
+            @screen sm {
+                @apply block;
+            }
+        }
+
     }
 }

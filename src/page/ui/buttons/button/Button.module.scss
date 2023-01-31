@@ -1,5 +1,5 @@
 .button_main {
-    @apply py-1.5 rounded-md px-5 text-main-200 bg-complimentary-600 transition-all duration-200 relative;
+    @apply py-1.5 rounded-md text-tiny px-5 text-main-200 bg-complimentary-600 transition-all duration-200 relative;
     font-weight: 600;
     background: linear-gradient(180deg, var(--complimentary-500), var(--complimentary-900));
 
@@ -13,27 +13,12 @@
     } 
 
     @screen md {
-        @apply text-sm;
+        @apply text-xs;
     }
 
     &:disabled {
         @apply text-main-200 bg-main-500 opacity-60;
     }   
-}
-
-.button_link {
-    @apply py-1.5 px-5 text-main-200 bg-transparent transition-all duration-200 relative;
-
-    @media (hover: hover) {
-        &:hover {           
-            box-shadow: 0 0 1rem rgba(255, 255, 255, 0.2);
-            filter: blur(5px);
-        }
-    }
-    &:focus {           
-        box-shadow: 0 0 1rem rgba(255, 255, 255, 0.2);
-        filter: blur(5px);
-    }
 }
 
 .button_refer {
@@ -60,4 +45,35 @@
             }
     }
 
+}
+
+.hamburger {
+    @apply flex flex-col text-main-200;
+    gap: .25rem;
+
+    >span {
+        @apply w-6 bg-main-200 rounded-sm transition-all duration-200;
+        height: 2px;
+
+    }
+    
+
+}
+
+.hamburger_active {
+
+    >span:first-child {
+        @apply bg-complimentary-200;
+        transform: rotate(-30deg);
+        transform-origin: bottom right;
+
+        }
+    >span:nth-child(2) {
+        @apply opacity-0;
+        }
+    >span:last-child {
+        transform: rotate(30deg);
+        transform-origin: top right;
+        }
+  
 }

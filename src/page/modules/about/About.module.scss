@@ -2,8 +2,9 @@
 
 .section_wrapper {
     @apply grid;
-    grid-template-columns:  8% 1fr;
-    grid-template-rows: 10rem 10rem;
+    grid-template-columns:  min-content 1fr;
+    grid-template-rows: 6rem 10rem;
+    column-gap: 10px;
 
     >div:first-child {
         @apply self-center justify-self-center;
@@ -26,5 +27,9 @@
         grid-column: 1;
         background: linear-gradient(var(--additional-200), var(--additional-900), var(--main-900));
 
+    }
+
+    @screen md {
+        grid-template-rows: 10rem 10rem;
     }
 }

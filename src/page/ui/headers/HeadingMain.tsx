@@ -7,8 +7,10 @@ const HeadingMain: FC<PropsWithChildren<IHeading>> = ({ children, ...rest }) => 
         <h1
             {...{ ...rest }}
             className={styles.heading_main}
+
         >
             {children}
+
         </h1>
     )
 }

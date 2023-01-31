@@ -1,8 +1,23 @@
 
 
 .links_list {
-    @apply flex gap-2 flex-nowrap items-center;
+    @apply flex gap-5 flex-nowrap flex-col  items-start;
     >li {
-        @apply flex items-center;
+        @apply flex items-start;
+        >a {
+            @apply text-main-900 text-xl opacity-90;
+        }
+    }
+
+    @screen md {
+        @apply flex-row text-main-200 gap-2 items-center;
+
+        >li {
+            @apply items-center;
+
+            >a {
+            @apply text-main-200 text-xs font-normal;
+            }
+        }
     }
 }

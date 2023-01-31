@@ -2,8 +2,8 @@
 
 
 .content {
-    @apply text-main-200 my-8 ml-6 flex flex-col gap-4;
-    font-size: 1.2rem;
+    @apply text-main-200 my-3 ml-3 flex flex-col gap-4;
+ 
     line-height: 1.6rem;
     span {
         @apply text-additional-200 font-bold;
@@ -11,5 +11,11 @@
     strong {
         @apply text-complimentary-200;
     }
+
+    @screen md {
+        @apply my-8 ml-6;
+           font-size: 1.2rem;
+    }
+   
     
 }

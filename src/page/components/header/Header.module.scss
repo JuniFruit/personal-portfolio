@@ -1,5 +1,9 @@
 
 
 .header {
-    @apply mx-auto h-20 flex justify-between;
+    @apply mx-auto h-12 flex justify-between relative;
+
+    @screen md {
+        @apply h-20;
+    }
 }

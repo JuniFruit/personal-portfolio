@@ -6,11 +6,12 @@ import IconGlow from '../../ui/icons/IconGlow';
 import { Line } from '../../ui/line/Line';
 import ContactBox from './contact-box/ContactBox';
 import styles from './Contact.module.scss';
+import sharedStyles from '../Section.module.scss';
 
 const Contact: FC = () => {
     return (
         <section id='contact'>
-            <div className={styles.section_wrapper}>
+            <div className={`${sharedStyles.section_wrapper} ${styles.contact_wrapper}`}>
                 <Line />
                 <IconGlow bgGlow="complimentary">
                     <IoMailOutline />

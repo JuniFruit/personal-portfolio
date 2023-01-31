@@ -1,13 +1,17 @@
 
 
 .wrapper {
-    @apply w-full h-16 py-1 px-5 flex items-center justify-between bg-box-bg rounded-t-lg border border-gray-700;
+    @apply w-full h-14 py-1 px-3 flex items-center justify-between bg-box-bg border-b border-gray-700;
 
     .right_elements,
     .left_elements {
         @apply text-main-200 opacity-60;
         >svg {
-            @apply w-8 h-8;
+            @apply w-6 h-6;
+
+            @screen sm {
+                @apply w-8 h-8;
+            }
         }
     }    
 
@@ -15,9 +19,12 @@
         @apply text-main-200 bg-main-900 rounded-md px-2 py-1;
 
         >h2 {
-            @apply text-sm;
+            @apply text-sm text-center;
             font-weight: 300;
         }
     }
     
+    @screen sm {
+        @apply px-5 h-16;
+    }
 }

@@ -1,10 +1,16 @@
 
 
 .wrapper {
-    @apply text-main-200 flex gap-10 items-center;
+    @apply text-main-200 flex flex-col gap-5 justify-center items-center;
 
     >h2 {
-        @apply font-bold opacity-70 text-xl;
+        @apply font-bold opacity-70 text-xs text-center;
     }
 
+    @screen sm {
+        @apply flex-row gap-10 justify-start;
+        >h2 {
+            @apply text-xl text-start;
+        }
+    }
 }

@@ -1,33 +1,58 @@
 .heading_main {
-    @apply break-words h-28 flex items-center; 
+    @apply  text-4xl text-complimentary-200; 
     font-family: 'P22MackinacPro';
-    font-size: 5rem;
     letter-spacing: -0.05rem;
     line-height: 3rem;
     font-weight: bolder;
     background-image: linear-gradient(0deg, var(--complimentary-900) 30%, var(--complimentary-500));
-    -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;    
+
+    @screen sm {
+        @apply text-5xl;
+    }
+    @screen lg {
+        @apply text-7xl h-28;
+    }
+    
+
 }
 .heading_sub {
-    @apply text-2xl opacity-70 break-words;
+    @apply text-base opacity-70 break-words text-main-200;
     font-family: 'P22MackinacPro';
+    line-height: 2rem;
     font-weight: bold;
+
+    @screen sm {
+        @apply text-2xl
+    }
+    @screen md {
+        @apply text-3xl
+    }
 }
 
 .heading_section,
 .code_heading {
-    @apply text-2xl text-main-200 break-words;
+    @apply text-xl text-main-200 break-words;
+
+    @screen sm {
+        @apply text-2xl
+    }
 }
 
 .code_heading {
     @apply text-base;
-    font-weight: 500
+    font-weight: 500;    
 }
 
 .section_subheading {
-    @apply text-4xl text-main-200 font-semibold;
-    line-height: 2.5rem;    
+    @apply text-base text-main-200 font-semibold;
+    line-height: 2rem;   
+    
+    @screen sm {
+        @apply text-4xl;
+        line-height: 2.5rem;
+    }
 }
 .main {
     @apply text-main-500;

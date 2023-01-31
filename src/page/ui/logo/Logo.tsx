@@ -1,10 +1,14 @@
 import { FC } from 'react'
 import { IoHome } from 'react-icons/io5';
+import { ILinks } from '../../components/header/right-elements/list/Links.interface';
 import styles from './Logo.module.scss';
 
-const Logo: FC = () => {
+
+interface ILogo extends ILinks { }
+
+const Logo: FC<ILogo> = ({ onItemClick }) => {
     return (
-        <button onClick={() => window.scrollTo(0, 0)} className={styles.logo}>
+        <button onClick={() => { window.scrollTo(0, 0); !!onItemClick && onItemClick() }} className={styles.logo}>
             <IoHome />
         </button>
     )

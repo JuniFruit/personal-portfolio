@@ -14,11 +14,21 @@
             letter-spacing: 0.025rem;
         }
         >p {
-            @apply text-sm opacity-0;
+            @apply text-tiny;
             font-family: "OperatorMono";
             font-weight: lighter;
-            transform: translateY(100%);
             
+            @screen sm {
+                @apply text-sm;
+            }
+            
+        }
+
+        @screen md {           
+            >p {
+                @apply opacity-0;
+                transform: translateY(100%);
+            }
         }
     }
     .curtain {
@@ -27,8 +37,10 @@
     }
 
     >a {
-        @apply  opacity-0;
-   
+        
+        @screen md {
+            @apply opacity-0;
+        }
       
     }
     @media (hover: hover) {

@@ -6,11 +6,12 @@ import IconGlow from '../../ui/icons/IconGlow';
 import { Line } from '../../ui/line/Line';
 import ProjectsContainer from './projects-container/ProjectsContainer';
 import styles from './Projects.module.scss';
+import sharedStyles from '../Section.module.scss';
 
 const Projects: FC = () => {
     return (
         <section id='projects'>
-            <div className={styles.section_wrapper}>
+            <div className={`${sharedStyles.section_wrapper} ${styles.projects_wrapper}`}>
                 <Line />
                 <IconGlow bgGlow="secondary">
                     <IoBriefcase />

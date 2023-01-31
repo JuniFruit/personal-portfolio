@@ -18,7 +18,12 @@
         background-size: 100%;
         .img_container {
             
-            @apply rounded-full overflow-hidden w-80 h-80;
+            @apply rounded-full overflow-hidden w-72 h-72;
+            object-fit: scale-down;
+            
+            @screen sm {
+                @apply w-80 h-80
+            }
         }
      }
 }

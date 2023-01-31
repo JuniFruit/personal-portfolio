@@ -1,11 +1,11 @@
-import { FC } from 'react'
+import { FC } from 'react';
 import HeadingMain from '../../ui/headers/HeadingMain';
 import HeadingSub from '../../ui/headers/SubHeading';
 import styles from './Heading.module.scss';
 
 const Heading: FC = () => {
     return (
-        <div className={styles.heading}>
+        <div className={styles.wrapper}>
             <HeadingMain>
                 Hello Everyone!
             </HeadingMain>

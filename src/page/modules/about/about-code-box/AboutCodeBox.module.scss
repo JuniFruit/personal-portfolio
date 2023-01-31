@@ -2,18 +2,17 @@
 
 
 .box_wrapper {
-    @apply grid my-5;
-    grid-template-columns: min-content 1fr 1fr;
-    grid-template-rows: repeat(3, min-content);
+    @apply grid my-5 border border-gray-700 rounded-lg overflow-hidden;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: repeat(4, min-content);
 
 
     >div:first-child {
-        grid-column: 1 / 4;
+        grid-column: 1 / 3;
         grid-row: 1
     }
     >div:nth-child(2) {
-        grid-row: 2 / 4;
-        grid-column: 1;
+       @apply hidden;
     }
     >div:nth-child(3) {
         grid-row: 2;
@@ -24,7 +23,28 @@
         grid-column: 2;
     }
     >div:last-child {
-        grid-row: 2 / 4;
-        grid-column: 3;
+        grid-row: 4;
+        grid-column: 2;
+    }
+
+    @screen md {
+        grid-template-columns: min-content repeat(2, 1fr);
+        grid-template-rows: repeat(3, min-content);
+
+        >div:first-child {
+            grid-column: 1 / 4;
+            grid-row: 1
+        }
+
+        >div:nth-child(2) {
+            @apply block;
+            grid-row: 2 / 4;
+            grid-column: 1;
+        }
+
+        >div:last-child {
+            grid-row: 2/4;
+            grid-column: 3;
+        }
     }
 }

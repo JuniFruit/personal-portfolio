@@ -1,12 +1,15 @@
 
 
 .wrapper {
-    @apply ml-5;
+    @apply ml-1;
 
     .form_wrapper {
         @apply w-full my-10;
         >form {
             @apply mx-auto;
         }
+    }
+    @screen sm {
+        @apply ml-5;
     }
 }

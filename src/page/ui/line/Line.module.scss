@@ -1,5 +1,12 @@
 .universal {
-    @apply w-1;
+    @apply w-1 mx-3;
+
+    @screen sm {
+        @apply mx-6;
+    }
+    @screen md {
+        @apply mx-10;
+    }
 }
 
 .default {

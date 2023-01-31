@@ -1,11 +1,11 @@
 import { FC } from 'react';
 import { IconLink } from '../../../ui/buttons/link/IconLink';
-import styles from '../right-elements/list/Links.module.scss';
+import styles from './Elements.module.scss';
 import { data } from './list/links.data';
 
 const LeftElements: FC = () => {
     return (
-        <ul className={styles.links_list}>
+        <ul className={styles.left}>
             {
                 data.map(link => (
                     <li key={link.title}>
