@@ -1,0 +1,42 @@
+
+.container {
+    @apply relative;
+
+    .wrapper {
+        @apply fixed inset-0 flex items-center justify-center p-4;
+        backdrop-filter: blur(5px);
+        z-index: 99;
+
+        .panel_wrapper {
+            @apply w-full max-w-sm px-5 py-3 rounded-lg shadow animate-scaleIn;
+            background: linear-gradient(0deg, var(--main-200), var(--dialog_compl));
+            animation-duration: .2s;
+
+            .panel_title {
+                @apply  text-opacity-90 my-2 text-main-900;
+                font-weight: 700;
+                letter-spacing: 0.05rem;
+            }
+
+            .panel_msg {
+                @apply  text-opacity-80 my-5 text-main-900 flex flex-col gap-2;
+                font-weight: 600;               
+
+              
+            }         
+
+            .panel_buttons {
+                @apply flex gap-2 items-center;
+
+                >button {
+                    @apply p-2 rounded-md bg-opacity-70 transition-colors hover:bg-opacity-100;
+                    font-size: .75rem;
+                }
+            }
+        }       
+       
+    }
+
+
+    
+}

@@ -1,5 +1,13 @@
 
 
+.sticky_header {
+    @apply static transition-all duration-300 opacity-0 pointer-events-none;
+}
+
+.active {
+    @apply fixed top-0 left-0 opacity-100 pointer-events-auto;
+}
+
 .section_wrapper {
     @apply grid;
     grid-template-columns:  min-content 1fr;
@@ -7,22 +15,23 @@
     column-gap: 10px;
 
     >div:first-child {
-        @apply self-center justify-self-center;
+        @apply self-center justify-self-center opacity-0;
         grid-row: 1;
         grid-column: 1;
     }
     >h2 {
-        @apply self-center;
+        @apply self-center opacity-0;
         grid-row: 1;
         grid-column: 2;
     }
     >p {
-        
+        @apply opacity-0;
         grid-row: 2;
         grid-column: 2;
     }
     >div:last-child {
         @apply justify-self-center;
+        height: 0%;
         grid-row: 2 ;
         grid-column: 1;
         background: linear-gradient(var(--additional-200), var(--additional-900), var(--main-900));
@@ -31,5 +40,26 @@
 
     @screen md {
         grid-template-rows: 10rem 10rem;
+    }
+}
+
+.visible {
+    >div:first-child {
+        @apply  animate-scaleIn;
+        animation-fill-mode: forwards;
+    }
+    >h2 {
+        @apply animate-slideInLeft;
+        animation-delay: 300ms;
+        animation-fill-mode: forwards
+        
+    }
+    >p {
+        @apply  animate-slideInLeft;
+        animation-fill-mode: forwards;
+        animation-delay: 500ms;
+    }
+    >div:last-child {
+        height: 100%;
     }
 }

@@ -1,0 +1,8 @@
+.sticky_header {
+    @apply static transition-all duration-300 opacity-0 px-6 pointer-events-none w-full h-min bg-main-900;
+    z-index: 100;
+}
+
+.active {
+    @apply fixed top-0 left-0 opacity-100 pointer-events-auto shadow;
+}

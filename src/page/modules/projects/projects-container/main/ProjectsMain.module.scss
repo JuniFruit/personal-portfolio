@@ -9,7 +9,7 @@
         @apply gap-5 pl-8;
         grid-template-columns: repeat(2, 1fr);
         >div:last-child {
-            @apply justify-self-center sticky top-5;
+            @apply justify-self-center sticky top-20;
         }
     }
 }

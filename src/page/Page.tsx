@@ -1,5 +1,7 @@
-import { FC } from 'react';
+import { FC, useEffect } from 'react';
+import { wakeUpApps } from './api/wakeUp.api';
 import Header from './components/header/Header';
+import StickyHeader from './components/header/sticky/StickyHeader';
 import About from './modules/about/About';
 import Contact from './modules/contact/Contact';
 import Education from './modules/education/Education';
@@ -10,11 +12,18 @@ import Skills from './modules/skills/SkillsSection';
 import styles from './Page.module.scss';
 
 const Page: FC = () => {
+
+    useEffect(() => {
+        // wakeUpApps();
+    }, [])
+
+
     return (
         <div className={styles.container}>
             <div className={styles.wrapper}>
                 <Header />
-                <main>
+                <StickyHeader />
+                <main >
                     <Hero />
                     <Resume />
                     <About />

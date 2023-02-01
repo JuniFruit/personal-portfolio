@@ -1,0 +1,11 @@
+
+
+.wrapper {
+    >div {      
+        >span,
+        >p {
+            @apply  transition-all duration-200 opacity-0 overflow-hidden;
+        }
+    }
+}
+

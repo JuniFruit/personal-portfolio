@@ -1,5 +1,12 @@
+
+.button_main,
+.button_refer,
+.dialog {
+    @apply py-1.5 px-5 transition-all duration-200;
+}
+
 .button_main {
-    @apply py-1.5 rounded-md text-tiny px-5 text-main-200 bg-complimentary-600 transition-all duration-200 relative;
+    @apply rounded-md text-tiny px-5 text-main-200 bg-complimentary-600 relative;
     font-weight: 600;
     background: linear-gradient(180deg, var(--complimentary-500), var(--complimentary-900));
 
@@ -9,7 +16,7 @@
         }
     }  
     &:focus {
-        box-shadow: 0 .15rem 1rem rgba(255, 255, 255, 0.3);
+        @apply border border-secondary-600;
     } 
 
     @screen md {
@@ -23,7 +30,7 @@
 
 .button_refer {
     
-    @apply py-1.5 px-5 text-main-200 font-bold bg-transparent transition-all duration-200 flex gap-2 items-center
+    @apply  text-main-200 font-bold bg-transparent flex gap-2 items-center
     border-2 border-complimentary-500 rounded-md;
 
     >svg {
@@ -56,6 +63,11 @@
         height: 2px;
 
     }
+    &:focus {
+        >span {
+            @apply bg-secondary-600;
+        }
+    }
     
 
 }
@@ -76,4 +88,21 @@
         transform-origin: top right;
         }
   
+}
+
+.dialog {
+    @apply py-1.5 px-5 font-bold text-main-600 bg-sky-200;
+
+    @media (hover: hover) {
+        @apply hover:bg-sky-300;
+    }
+
+    &:focus {
+        @apply bg-secondary-600;
+    }
+
+    &:disabled {
+        @apply border bg-slate-400;
+    }
+    
 }

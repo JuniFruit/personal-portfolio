@@ -1,0 +1,28 @@
+
+.checkbox_main {
+    @apply flex gap-2 items-center my-2;
+    >input {
+        @apply w-5 h-5 relative cursor-pointer border-2 border-main-700 rounded-md overflow-hidden;
+       
+        &:checked::before {
+            transform: scale(0.85);
+        }
+        
+
+        &::before {
+            @apply w-full h-full  transition-all duration-200 bg-main-600 absolute top-0 left-0;
+            content: '';
+            transform:  scale(0);
+            clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+        }
+
+        &:focus {
+            @apply border-secondary-600;
+        }
+        &:disabled {
+            @apply bg-gray-300;
+            cursor: not-allowed;
+
+        }
+    }
+}

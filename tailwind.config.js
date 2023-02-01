@@ -1,4 +1,3 @@
-const plugin = require('tailwindcss/plugin')
 const defaultTheme = require('tailwindcss/defaultTheme')
     ;
 /** @type {import('tailwindcss').Config} */
@@ -74,11 +73,68 @@ module.exports = {
                 enterFromBottom: {
                     "0%": {
                         opacity: 0,
-                        transform: 'translateY(100%)'
+                        transform: 'translateY(10%)'
                     },
                     "100%": {
                         opacity: 1,
                         transform: 'translateY(0%)'
+                    }
+                },
+                slideInLeft: {
+                    '0%': {
+                        transform: 'translateX(-10%)',
+                        opacity: '0'
+                    },
+                    '100%': {
+                        transform: 'translateX(0%)',
+                        opacity: '1'
+                    }
+                },
+                slideInTop: {
+                    '0%': {
+                        transform: 'translateY(-10%)',
+                        opacity: '0'
+                    },
+                    '100%': {
+                        transform: 'translateY(0%)',
+                        opacity: '1'
+                    }
+                },
+                slideInRight: {
+                    '0%': {
+                        transform: 'translateX(10%)',
+                        opacity: '0'
+                    },
+                    '100%': {
+                        transform: 'translateX(0%)',
+                        opacity: '1'
+                    }
+                },
+                type: {
+                    '0%': {
+                        width: '0',
+                        opacity: '0'
+                    },
+                    "1%": {
+                        opacity: "1"
+                    },
+                    "99.9%": {
+                        borderRight: '.15em solid var(--additional-500)'
+                    },
+                    "100%": {
+                        borderRight: 'none',
+                        opacity: "1"
+                    }
+
+                },
+                curtainSlide: {
+                    '0%': {
+                        transform: 'translateX(-100%)',
+
+                    },
+                    '100%': {
+                        transform: 'translateX(500%)',
+
                     }
                 }
             },
@@ -100,7 +156,12 @@ module.exports = {
             animation: {
                 fadeIn: 'fadeIn .5s ease-in-out',
                 scaleIn: 'scaleIn .35s ease-in-out',
-                enterFromBottom: 'enterFromBottom .5s ease-in-out'
+                enterFromBottom: 'enterFromBottom .5s ease-in-out',
+                slideInLeft: 'slideInLeft .35s ease',
+                slideInRight: 'slideInRight .35s ease',
+                slideInTop: 'slideInTop .35s ease',
+                curtainSlide: 'curtainSlide .35s ease .55s',
+                type: "type 1s ease"
 
             },
             fontFamily: {

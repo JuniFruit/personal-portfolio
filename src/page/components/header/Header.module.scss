@@ -2,8 +2,8 @@
 
 .header {
     @apply mx-auto h-12 flex justify-between relative;
-
+    z-index: 100;
     @screen md {
-        @apply h-20;
+        @apply h-16;
     }
 }

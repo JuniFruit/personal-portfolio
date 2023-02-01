@@ -7,6 +7,7 @@ const Link: FC<PropsWithChildren<ILink>> = ({ ...props }) => {
         <a
             className={styles.link}
             {...{ ...props }}
+            tabIndex={0}
         >
 
         </a>

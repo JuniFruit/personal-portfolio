@@ -7,11 +7,19 @@ import { Line } from '../../ui/line/Line';
 import ContactBox from './contact-box/ContactBox';
 import styles from './Contact.module.scss';
 import sharedStyles from '../Section.module.scss';
+import { getIntersectDefaultOpt } from '../../utils/general.utils';
+import { useIntersect } from '../../../hooks/useIntersect';
 
 const Contact: FC = () => {
+
+    const { ref, isIntersecting } = useIntersect({ options: getIntersectDefaultOpt() });
+
     return (
-        <section id='contact'>
-            <div className={`${sharedStyles.section_wrapper} ${styles.contact_wrapper}`}>
+        <section id='contact' ref={ref}>
+            <div
+                className={`${sharedStyles.section_wrapper} 
+                ${styles.contact_wrapper} ${isIntersecting && sharedStyles.visible}`}
+            >
                 <Line />
                 <IconGlow bgGlow="complimentary">
                     <IoMailOutline />

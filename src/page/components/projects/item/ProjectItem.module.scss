@@ -1,53 +1,52 @@
 
-
-.wrapper {
-    @apply text-main-200 flex flex-col gap-2 my-4 border relative overflow-hidden
-    border-secondary-500 cursor-pointer py-4 px-6 transition-all duration-300 ;
-
-    .content {
-        @apply flex flex-col gap-2;
-
-        >h3 {
-            @apply text-xl opacity-80 font-bold transition-colors duration-300;
-          
-            font-family: "OperatorMono";
-            letter-spacing: 0.025rem;
-        }
-        >p {
-            @apply text-tiny;
-            font-family: "OperatorMono";
-            font-weight: lighter;
-            
-            @screen sm {
-                @apply text-sm;
+.container {
+    @apply opacity-0;
+    .wrapper {
+        @apply text-main-200 flex flex-col gap-2 my-4 border relative overflow-hidden
+        border-secondary-500 cursor-pointer py-4 px-6 transition-all duration-300 ;
+    
+        .content {
+            @apply flex flex-col gap-2;
+            >h3 {
+                @apply text-xl opacity-0 font-bold transition-all duration-300 delay-200;
+              
+                font-family: "OperatorMono";
+                letter-spacing: 0.025rem;
             }
-            
-        }
-
-        @screen md {           
             >p {
-                @apply opacity-0;
-                transform: translateY(100%);
+                @apply text-tiny;
+                font-family: "OperatorMono";
+                font-weight: lighter;
+                
+                @screen sm {
+                    @apply text-sm;
+                }
+                
+            }
+    
+            @screen md {           
+                >p {
+                    @apply opacity-0;
+                    transform: translateY(100%);
+                }
             }
         }
-    }
-    .curtain {
-        @apply absolute transition-all duration-500 top-0 left-0 h-full w-28 bg-secondary-900;
-        transform: translateX(-100%);
-    }
-
-    >a {
-        
-        @screen md {
-            @apply opacity-0;
+        .curtain {
+            @apply absolute transition-all duration-500 top-0 left-0 h-full w-28 bg-secondary-900;
+            transform: translateX(-100%);
         }
-      
-    }
-    @media (hover: hover) {
-        &:hover {
+    
+        >a {
+            
+            @screen md {
+                @apply opacity-0;
+            }
+          
+        }
+        &:focus {
             transform:  scale(1.025);
             .curtain {
-                transform: translateX(500%);
+                transform: translateX(600%);
                
             }
             .content {                
@@ -67,5 +66,57 @@
                 animation-delay: 700ms;
             }
         }
+        @media (hover: hover) {
+            &:hover {
+                transform:  scale(1.025);
+                .curtain {
+                    transform: translateX(600%);
+                   
+                }
+                .content {                
+                    >p {
+                        @apply animate-enterFromBottom;
+                        animation-fill-mode: forwards;
+                        animation-delay: 250ms;
+                    }
+                    >h3 {
+                        @apply text-secondary-700;
+                    }
+                }
+                >a {
+                    @apply animate-scaleIn;
+                    animation-fill-mode: forwards;
+                    animation-duration: .2s;
+                    animation-delay: 700ms;
+                }
+            }
+        }
+    }
+
+
+}
+
+
+.visible {
+    @apply animate-slideInLeft;
+    animation-fill-mode: forwards;
+    animation-delay: 150ms;
+    .wrapper {
+        .curtain {
+            @apply animate-curtainSlide;
+            animation-duration: .5s;
+            animation-direction: reverse;
+            animation-delay: 0ms;   
+        }
+    
+        .content {
+            >h3 {
+                @apply  opacity-80 ; 
+              
+              
+            }
+        }
+
     }
 }
+

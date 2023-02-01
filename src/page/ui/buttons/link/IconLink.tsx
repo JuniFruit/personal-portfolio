@@ -6,6 +6,7 @@ export const IconLink: FC<PropsWithChildren<ILink>> = ({ ...props }) => {
         <a
             className={styles.icon_link}
             {...{ ...props }}
+            tabIndex={0}
         >
 
         </a>

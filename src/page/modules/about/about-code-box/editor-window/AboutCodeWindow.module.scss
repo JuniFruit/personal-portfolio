@@ -1,25 +1,33 @@
 
 
+
 .wrapper {
     @apply px-2 py-2 bg-main-900 overflow-x-hidden;
 
-    >.content > div > p {
-        @apply text-main-200 flex  items-center  flex-nowrap;
-        font-size: .65rem;
-        font-family: 'OperatorMono';
-        white-space: nowrap;
-        .string {
-            @apply text-syntax-string;        
-        }
-        .keyword {
-            @apply text-syntax-keyword;
-        }
-        .num {
-            @apply text-complimentary-200;
-        }
+    
 
-        @screen sm {
-            @apply ml-10 text-sm gap-2;
+    >.content > div {
+        @apply transition-all opacity-0 duration-150 w-full overflow-hidden gap-2;
+            > p {
+            @apply text-main-200 flex items-center flex-nowrap ;
+            
+            font-size: .65rem;
+            font-family: 'OperatorMono';
+            white-space: nowrap;
+            .string {
+                @apply text-syntax-string;        
+            }
+            .keyword {
+                @apply text-syntax-keyword;
+            }
+            .num {
+                @apply text-complimentary-200;
+            }
+           
+
+            @screen sm {
+                @apply ml-10 text-sm gap-2;
+            }
         }
     }
 

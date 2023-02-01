@@ -35,9 +35,8 @@
     font-family: 'OperatorMono';
 
     >.num {
-        @apply w-5 text-main-200 opacity-30 text-tiny flex items-center justify-center;
+        @apply w-5 text-main-200 opacity-30 text-tiny;
         font-weight: lighter;
-     
     }
 }
 

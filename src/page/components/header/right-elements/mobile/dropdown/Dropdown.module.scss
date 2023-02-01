@@ -1,7 +1,8 @@
 
 
 .container {
-    @apply absolute top-full left-0;
+    @apply fixed left-0;
+    top: 2.5rem;
     width: 100vw;
     height: 100vh;
     background-color: transparent;
@@ -9,8 +10,8 @@
     z-index: 20;
     .menu_wrapper {        
         @apply bg-main-200 rounded-xl animate-scaleIn
-        flex w-full  h-max flex-col gap-5  left-0 py-4 px-6;     
-        width: 320px;
+        flex w-full  h-max flex-col gap-5 ml-2 mt-2 py-4 px-6;     
+        width: 300px;
            
         >button {
             @apply text-complimentary-500;
