@@ -1,0 +1,6 @@
+
+.wrapper {
+    @apply transition-all duration-300 ease-out fixed z-30 top-20;
+    right: -40%;
+    will-change: transform;
+}

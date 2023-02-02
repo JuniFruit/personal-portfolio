@@ -1,0 +1,8 @@
+.wrapper {
+    @apply grid pb-3;
+    grid-template-rows: 5rem;
+    >div:first-child {
+        background: linear-gradient(var(--main-900), var(--complimentary-500), var(--main-900));
+    }
+   
+}

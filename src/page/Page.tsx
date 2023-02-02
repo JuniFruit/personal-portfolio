@@ -1,5 +1,6 @@
 import { FC, useEffect } from 'react';
 import { wakeUpApps } from './api/wakeUp.api';
+import Footer from './components/footer/Footer';
 import Header from './components/header/Header';
 import StickyHeader from './components/header/sticky/StickyHeader';
 import About from './modules/about/About';
@@ -19,22 +20,25 @@ const Page: FC = () => {
 
 
     return (
-        <div className={styles.container}>
-            <div className={styles.wrapper}>
-                <Header />
-                <StickyHeader />
-                <main >
-                    <Hero />
-                    <Resume />
-                    <About />
-                    <Projects />
-                    <Skills />
-                    <Education />
-                    <Contact />
-                </main>
-            </div>
+        <>
+            <div className={styles.container}>
+                <div className={styles.wrapper}>
+                    <Header />
+                    <StickyHeader />
+                    <main >
+                        <Hero />
+                        <Resume />
+                        <About />
+                        <Projects />
+                        <Skills />
+                        <Education />
+                        <Contact />
+                    </main>
+                    <Footer />
+                </div>
 
-        </div>
+            </div>
+        </>
     )
 }
 

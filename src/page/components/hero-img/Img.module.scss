@@ -1,0 +1,7 @@
+
+.wrapper {
+    @apply animate-shipFlyIn;
+    /* transform: translate(-600%, -200%); */
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(.57,.14,.37,.88);
+}

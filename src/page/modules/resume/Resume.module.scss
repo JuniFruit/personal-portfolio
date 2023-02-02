@@ -1,7 +1,7 @@
 
 
 .section_wrapper {
-    @apply grid ;
+    @apply grid relative;
     grid-template-columns:  min-content 1fr;
     grid-template-rows: 10rem 15rem;
 

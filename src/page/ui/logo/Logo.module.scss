@@ -8,4 +8,8 @@
     @media (hover: hover) {
         @apply hover:text-additional-200;
     }
+
+    &:focus-visible {
+        @apply text-additional-200;
+    }
 }

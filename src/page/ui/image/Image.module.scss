@@ -13,3 +13,29 @@
 .img_element {
     @apply object-contain;
 }
+
+
+.animated_wrapper {
+    @apply  animate-float;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 8s;   
+    width: 10rem;
+    height: 8rem;    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  
+    @screen sm {
+        width: 12rem;
+        height: 10rem;
+    }
+    @screen md {
+        width: 16rem;
+        height: 14rem;
+    }
+    @screen lg {
+        width: 22rem;
+        height: 16rem;
+    }
+}

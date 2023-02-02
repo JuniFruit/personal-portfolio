@@ -15,7 +15,7 @@
             box-shadow: 0 .15rem 1rem rgba(255, 255, 255, 0.3);
         }
     }  
-    &:focus {
+    &:focus-visible {
         @apply border border-secondary-600;
     } 
 
@@ -63,7 +63,7 @@
         height: 2px;
 
     }
-    &:focus {
+    &:focus-visible {
         >span {
             @apply bg-secondary-600;
         }
@@ -97,7 +97,7 @@
         @apply hover:bg-sky-300;
     }
 
-    &:focus {
+    &:focus-visible {
         @apply bg-secondary-600;
     }
 

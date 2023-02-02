@@ -1,7 +1,8 @@
 
 
 .projects_wrapper {
-
+    
+    background-size: fill;
     >div:first-child {        
         background: linear-gradient(var(--main-900), var(--additional-200), var(--secondary-200));
         

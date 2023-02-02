@@ -12,7 +12,7 @@
 }
 
 .card_wrapper {
-    @apply bg-box-bg border-2 flex flex-col items-center select-none touch-none opacity-0
+    @apply bg-box-bg border-2 flex flex-col items-center select-none select-none opacity-0
     justify-center text-main-200 border-gray-700 rounded-md py-4 px-6 w-20 h-40;
    
 

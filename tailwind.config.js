@@ -136,6 +136,36 @@ module.exports = {
                         transform: 'translateX(500%)',
 
                     }
+                },
+                shipFlyIn: {
+                    "0%": {
+                        transform: 'translate(-600%, -200%)'
+                    },
+                    "30%": {
+                        transform: 'translate(-200%, -50%)'
+                    },
+                    "40%": {
+                        transform: 'translate(-250%, 0%)'
+                    },
+                    "50%": {
+                        transform: 'translate(-100%, -30%)'
+                    },
+                    "60%": {
+                        transform: 'translate(-50%,  0%)'
+                    },
+                    "100%": {
+                        transform: 'translate(0%, 0%)'
+                    }
+
+
+                },
+                float: {
+                    "0%": {
+                        transform: 'translateY(-10%)'
+                    },
+                    '100%': {
+                        transform: 'translateY(0%)'
+                    }
                 }
             },
             fontSize: {
@@ -161,7 +191,9 @@ module.exports = {
                 slideInRight: 'slideInRight .35s ease',
                 slideInTop: 'slideInTop .35s ease',
                 curtainSlide: 'curtainSlide .35s ease .55s',
-                type: "type 1s ease"
+                type: "type 1s ease",
+                shipFlyIn: "shipFlyIn 4s ease",
+                float: 'float 2s ease'
 
             },
             fontFamily: {

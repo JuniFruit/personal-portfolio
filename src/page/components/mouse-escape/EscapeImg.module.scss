@@ -1,0 +1,7 @@
+
+.wrapper {
+    @apply absolute border border-secondary-700;
+    >div {
+        @apply animate-none;
+    }
+}

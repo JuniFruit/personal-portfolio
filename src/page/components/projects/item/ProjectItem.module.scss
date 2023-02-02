@@ -43,7 +43,7 @@
             }
           
         }
-        &:focus {
+        &:focus-visible {
             transform:  scale(1.025);
             .curtain {
                 transform: translateX(600%);
