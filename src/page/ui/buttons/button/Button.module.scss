@@ -45,7 +45,7 @@
             }
         }
     }
-    &:focus {
+    &:focus-visible {
         @apply border-main-200;
             >svg {
                 @apply w-5 h-5;

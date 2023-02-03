@@ -81,6 +81,14 @@ body,
  /* height: 100%; */
 }
 
+#root {
+  @apply fixed top-0 left-0 bottom-0 right-0 overflow-y-auto overflow-x-hidden -z-10;
+  background-image: url('./assets/images/space_bg.png');
+  /* background-attachment: fixed; */
+  background-size: cover;
+  scroll-behavior: smooth;
+}
+
 html {
   line-height: 1.3rem;
   overflow-x: hidden;  
@@ -98,9 +106,7 @@ html {
 
 body {
   @apply bg-main-900;
-  background-image: url('./assets/images/space_bg.png');
-  background-repeat: repeat-y;
-  background-size: contain;
+  
 
   /* background-size: fill; */
 }
@@ -141,7 +147,7 @@ body {
   --syntax-keyword: #f92649;
   --syntax-arg: #fd8c2b;
   --syntax-string: #e6db74;
-
+  
   --dialog_compl: #daeffe;
 }
 

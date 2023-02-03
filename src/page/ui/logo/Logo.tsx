@@ -6,9 +6,14 @@ import styles from './Logo.module.scss';
 
 interface ILogo extends ILinks { }
 
+
+
 const Logo: FC<ILogo> = ({ onItemClick }) => {
+
+    const root = document.getElementById('root');
+
     return (
-        <button onClick={() => { window.scrollTo(0, 0); !!onItemClick && onItemClick() }} className={styles.logo}>
+        <button onClick={() => { root!.scrollTo(0, 0); !!onItemClick && onItemClick() }} className={styles.logo}>
             <IoHome />
         </button>
     )

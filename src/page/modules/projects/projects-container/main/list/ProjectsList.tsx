@@ -15,7 +15,7 @@ export const ProjectsList: FC<IProjectList> = ({ onItemClick, onItemHover }) => 
                         key={ind}
                         {...{ ...project }}
                         onClick={(e) => { e.stopPropagation(); onItemClick(project.link) }}
-                        onMouseOver={() => onItemHover(project.imgSrc)}
+                        onMouseOver={() => onItemHover(project.preview)}
                     />
                 ))
             }

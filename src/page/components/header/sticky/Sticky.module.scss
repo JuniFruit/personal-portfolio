@@ -1,6 +1,9 @@
 .sticky_header {
     @apply static transition-all duration-300 opacity-0 px-6 pointer-events-none w-full h-min bg-main-900;
     z-index: 100;
+    >header {
+        max-width: 1200px;
+    }
 }
 
 .active {

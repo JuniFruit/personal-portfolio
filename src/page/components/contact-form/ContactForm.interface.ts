@@ -1,7 +1,7 @@
 
 
 export interface IContactForm {
-    onSubmitForm: (data: IContactFields) => void;
+    onSubmitForm: (data: IContactFields, form: HTMLFormElement) => void;
 }
 
 export interface IContactFields {

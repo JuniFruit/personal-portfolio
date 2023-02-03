@@ -1,5 +1,4 @@
-import { FC, useEffect } from 'react';
-import { wakeUpApps } from './api/wakeUp.api';
+import { FC } from 'react';
 import Footer from './components/footer/Footer';
 import Header from './components/header/Header';
 import StickyHeader from './components/header/sticky/StickyHeader';
@@ -14,31 +13,28 @@ import styles from './Page.module.scss';
 
 const Page: FC = () => {
 
-    useEffect(() => {
-        // wakeUpApps();
-    }, [])
 
 
     return (
-        <>
-            <div className={styles.container}>
-                <div className={styles.wrapper}>
-                    <Header />
-                    <StickyHeader />
-                    <main >
-                        <Hero />
-                        <Resume />
-                        <About />
-                        <Projects />
-                        <Skills />
-                        <Education />
-                        <Contact />
-                    </main>
-                    <Footer />
-                </div>
 
+        <div className={styles.container}>
+            <div className={styles.wrapper}>
+                <Header />
+                <StickyHeader />
+                <main >
+                    <Hero />
+                    <Resume />
+                    <About />
+                    <Projects />
+                    <Skills />
+                    <Education />
+                    <Contact />
+                    <Footer />
+                </main>
             </div>
-        </>
+
+        </div>
+
     )
 }
 

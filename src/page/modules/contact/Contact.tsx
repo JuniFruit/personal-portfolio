@@ -9,13 +9,15 @@ import styles from './Contact.module.scss';
 import sharedStyles from '../Section.module.scss';
 import { getIntersectDefaultOpt } from '../../utils/general.utils';
 import { useIntersect } from '../../../hooks/useIntersect';
+import { images } from '../../../assets/images/images';
+import AnimatedImg from '../../ui/image/animated/AnimatedImg';
 
 const Contact: FC = () => {
 
     const { ref, isIntersecting } = useIntersect({ options: getIntersectDefaultOpt() });
 
     return (
-        <section id='contact' ref={ref}>
+        <section id='contact' ref={ref} className={styles.container}>
             <div
                 className={`${sharedStyles.section_wrapper} 
                 ${styles.contact_wrapper} ${isIntersecting && sharedStyles.visible}`}
@@ -34,6 +36,8 @@ const Contact: FC = () => {
                 />
                 <Line />
             </div>
+
+            <AnimatedImg imgSrc={images.moon} alt="" />
             <ContactBox />
         </section>
     )

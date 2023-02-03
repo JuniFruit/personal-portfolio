@@ -1,6 +1,7 @@
 import { FC, useCallback, useState } from 'react';
+import { useIsMobile } from '../../../../../hooks/useIsMobile';
 import InfoDialog from '../../../../ui/dialog/InfoDialog';
-import { RotatedImage } from '../../../../ui/image/rotated/RotatedImage';
+import PreviewVideo from '../../../../ui/video/PreviewVideo';
 import { infoMessage } from '../utils/general';
 import { ProjectsList } from './list/ProjectsList';
 import styles from "./ProjectsMain.module.scss";
@@ -8,9 +9,10 @@ import styles from "./ProjectsMain.module.scss";
 const ProjectsMain: FC = () => {
     const [preview, setPreview] = useState('');
     const [isProjectClicked, setIsProjectClicked] = useState(false);
-    const setPreviewSrc = useCallback((imgSrc: string) => {
-        setPreview(imgSrc)
+    const setPreviewSrc = useCallback((previewSrc: string) => {
+        setPreview(previewSrc)
     }, [])
+    const { isMobile } = useIsMobile()
 
     const handleClickItem = useCallback((link: string) => {
 
@@ -21,7 +23,7 @@ const ProjectsMain: FC = () => {
             window.open(link, "_blank");
         }, delay)
 
-        if (!isInfoHidden) setIsProjectClicked(true);
+        if (!isInfoHidden && !isMobile) setIsProjectClicked(true);
     }, [])
 
     return (
@@ -30,10 +32,12 @@ const ProjectsMain: FC = () => {
                 onItemClick={handleClickItem}
                 onItemHover={setPreviewSrc}
             />
-            <RotatedImage
-                imgSrc={preview}
-                alt="Project preview"
-            />
+            {
+                !isMobile ? <PreviewVideo
+                    videoSrc={preview}
+
+                /> : null
+            }
             {
                 isProjectClicked ?
                     <InfoDialog

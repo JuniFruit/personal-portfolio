@@ -1,0 +1,16 @@
+
+
+.wrapper {
+    @apply w-full flex justify-center h-min animate-scaleIn;
+
+    >p {
+        @apply text-main-200 font-bold text-emerald-300;
+    }
+
+}
+
+.error {
+    >p {
+        @apply text-red-400
+    };
+}

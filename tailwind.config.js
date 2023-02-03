@@ -44,7 +44,8 @@ module.exports = {
                 'syntax-keyword': 'var(--syntax-keyword)',
                 'syntax-func': 'var(--syntax-func)',
                 'syntax-arg': 'var(--syntax-arg)',
-                'syntax-string': 'var(--syntax-string)'
+                'syntax-string': 'var(--syntax-string)',
+                'dialog_compl': 'var(--dialog_compl)',
 
             },
             boxShadow: {

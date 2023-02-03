@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC, useRef } from 'react';
 import { useForm } from 'react-hook-form';
 import { ButtonRefer } from '../../ui/buttons/button/ButtonRefer';
 import Field from '../../ui/fields/Field';
@@ -13,10 +13,12 @@ const ContactForm: FC<IContactForm> = ({ onSubmitForm }) => {
         mode: "onChange"
     })
 
+    const formRef = useRef<HTMLFormElement>(null);
 
     return (
         <form
-            onSubmit={(e) => { e.preventDefault(); handleSubmit(onSubmitForm)() }}
+            ref={formRef}
+            onSubmit={(e) => { e.preventDefault(); handleSubmit((data) => onSubmitForm(data, formRef.current!))() }}
         >
             <div className={styles.form_top}>
                 <div className={styles.credentials}>

@@ -10,7 +10,8 @@
     z-index: 20;
     .menu_wrapper {        
         @apply bg-main-200 rounded-xl animate-scaleIn
-        flex w-full  h-max flex-col gap-5 ml-2 mt-2 py-4 px-6;     
+        flex w-full  h-max flex-col gap-5 ml-2 mt-2 py-4 px-6; 
+        background: linear-gradient(0deg, var(--main-200), var(--dialog_compl));    
         width: 300px;
            
         >button {
