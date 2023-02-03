@@ -19,11 +19,11 @@ const ProjectsMain: FC = () => {
         const isInfoHidden = window.localStorage.getItem("info_hidden") === 'true';
         const delay = isInfoHidden ? 0 : 2000;
 
-        setTimeout(() => {
+        isMobile ? window.open(link, "_blank") : setTimeout(() => {
             window.open(link, "_blank");
         }, delay)
 
-        if (!isInfoHidden && !isMobile) setIsProjectClicked(true);
+        if (!isInfoHidden) setIsProjectClicked(true);
     }, [])
 
     return (
