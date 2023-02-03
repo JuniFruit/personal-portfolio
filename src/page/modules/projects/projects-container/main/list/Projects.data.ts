@@ -45,7 +45,7 @@ export const projectList: IProjectItemData[] = [
     {
         title: "Personal Portfolio",
         shortDescription: "Website you're currently browsing. You can checkout GitHub repo",
-        link: "https://63dd14b9479b640008799852--grand-rugelach-90ccca.netlify.app/",
+        link: "https://jpersonal-portfolio-website.netlify.app/",
         gitHubLink: "https://github.com/JuniFruit/personal-portfolio",
         preview: "https://drive.google.com/uc?export=download&id=1w7p0nmeXjgZ8caSDvXi6E9l5CQ_VShyA"
     }
