@@ -11,6 +11,7 @@ import tailwind from './tailwind.png';
 import certificate from './Certificate.png';
 import ufo from './UFO.svg';
 import moon from './moon.png';
+import preview_bg from './preview_bg.png'
 
 export const images = {
     profile_pic,
@@ -25,5 +26,6 @@ export const images = {
     node,
     certificate,
     ufo,
-    moon
+    moon,
+    preview_bg
 }

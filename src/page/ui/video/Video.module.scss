@@ -3,5 +3,13 @@
     @apply bg-transparent overflow-hidden rounded-lg p-5 animate-scaleIn;
     max-width: 38rem;
     max-height: 28rem;  
+
+    >video {
+        @apply rounded-xl;
+        box-shadow: .25rem .25rem .9rem rgba(255, 255, 255, 0.1), 
+        -.25rem -.25rem .9rem rgba(255, 255, 255, 0.1),
+        -.25rem .25rem .9rem rgba(255, 255, 255, 0.1),
+        .25rem -.25rem .9rem rgba(255, 255, 255, 0.1);
+    }
   
 }
