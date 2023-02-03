@@ -1,16 +1,16 @@
-import { FC } from 'react';
+import { FC, lazy, Suspense } from 'react';
 import { IoMailOutline } from 'react-icons/io5';
 import HeadingSection from '../../ui/headers/HeadingSection';
 import SectionSubHeading from '../../ui/headers/SectionSubHeading';
 import IconGlow from '../../ui/icons/IconGlow';
 import { Line } from '../../ui/line/Line';
-import ContactBox from './contact-box/ContactBox';
 import styles from './Contact.module.scss';
 import sharedStyles from '../Section.module.scss';
 import { getIntersectDefaultOpt } from '../../utils/general.utils';
 import { useIntersect } from '../../../hooks/useIntersect';
 import { images } from '../../../assets/images/images';
 import AnimatedImg from '../../ui/image/animated/AnimatedImg';
+const ContactBox = lazy(() => import('./contact-box/ContactBox'));
 
 const Contact: FC = () => {
 
@@ -38,7 +38,9 @@ const Contact: FC = () => {
             </div>
 
             <AnimatedImg imgSrc={images.moon} alt="" />
-            <ContactBox />
+            <Suspense fallback={null}>
+                <ContactBox />
+            </Suspense>
         </section>
     )
 }

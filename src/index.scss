@@ -78,13 +78,11 @@ body,
 #root {
   width: 100%;
  min-height: 100%;
- /* height: 100%; */
 }
 
 #root {
   @apply fixed top-0 left-0 bottom-0 right-0 overflow-y-auto overflow-x-hidden -z-10;
   background-image: url('./assets/images/space_bg.png');
-  /* background-attachment: fixed; */
   background-size: cover;
   scroll-behavior: smooth;
 }

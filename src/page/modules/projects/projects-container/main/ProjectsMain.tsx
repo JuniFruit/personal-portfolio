@@ -1,10 +1,10 @@
-import { FC, useCallback, useState } from 'react';
+import { FC, lazy, Suspense, useCallback, useState } from 'react';
 import { useIsMobile } from '../../../../../hooks/useIsMobile';
 import InfoDialog from '../../../../ui/dialog/InfoDialog';
-import PreviewVideo from '../../../../ui/video/PreviewVideo';
 import { infoMessage } from '../utils/general';
 import { ProjectsList } from './list/ProjectsList';
 import styles from "./ProjectsMain.module.scss";
+const PreviewVideo = lazy(() => import('../../../../ui/video/PreviewVideo'));
 
 const ProjectsMain: FC = () => {
     const [preview, setPreview] = useState('');
@@ -32,12 +32,14 @@ const ProjectsMain: FC = () => {
                 onItemClick={handleClickItem}
                 onItemHover={setPreviewSrc}
             />
-            {
-                !isMobile ? <PreviewVideo
-                    videoSrc={preview}
+            <Suspense fallback={null}>
+                {
+                    !isMobile ? <PreviewVideo
+                        videoSrc={preview}
 
-                /> : null
-            }
+                    /> : null
+                }
+            </Suspense>
             {
                 isProjectClicked ?
                     <InfoDialog

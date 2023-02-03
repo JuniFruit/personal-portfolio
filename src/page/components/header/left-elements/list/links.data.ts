@@ -14,7 +14,7 @@ export const data: ILinkIconDataItem[] = [
     },
     {
         title: "LinkedIn",
-        href: "#about",
+        href: "https://www.linkedin.com/in/artyom-nebianskii-494427240/",
         icon: IoLogoLinkedin
     },
 

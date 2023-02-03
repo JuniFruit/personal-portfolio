@@ -10,10 +10,16 @@ const AboutOutputWindow: FC = () => {
     return (
         <div className={styles.wrapper}>
             <div className={styles.header}>
-                <IconLink>
+                <IconLink
+                    href='https://github.com/JuniFruit'
+                    target={"_blank"}
+                >
                     <IoLogoGithub />
                 </IconLink>
-                <IconLink>
+                <IconLink
+                    href='https://www.linkedin.com/in/artyom-nebianskii-494427240/'
+                    target={"_blank"}
+                >
                     <IoLogoLinkedin />
                 </IconLink>
                 <div className={styles.placeholder}>
