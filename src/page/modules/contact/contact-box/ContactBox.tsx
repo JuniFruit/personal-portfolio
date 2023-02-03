@@ -9,11 +9,13 @@ import Handler from './handler/Handler';
 
 const ContactBox: FC = () => {
 
-    const [result, setResult] = useState<EmailJSResponseStatus | null>(null)
+    const [result, setResult] = useState<EmailJSResponseStatus | null>(null);
+    const [isSending, setIsSending] = useState(false);
 
     const handleSubmit = (data: IContactFields, form: HTMLFormElement) => {
-
-        EmailService.sendEmail(form).then(res => setResult(res)).catch(error => setResult(error));
+        setIsSending(true);
+        EmailService.sendEmail(form).then(res => setResult(res))
+            .catch(error => setResult(error)).finally(() => setIsSending(false));
     }
 
     useEffect(() => {
@@ -36,6 +38,7 @@ const ContactBox: FC = () => {
             </CodeHeading>
             <div className={styles.form_wrapper}>
                 <ContactForm
+                    isLoading={isSending}
                     onSubmitForm={handleSubmit}
                 />
             </div>

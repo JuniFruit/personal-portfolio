@@ -11,7 +11,7 @@ const Heading: FC = () => {
             </HeadingMain>
 
             <HeadingSub>
-                Welcome to my Portfolio Website. Here I showcase my projects and skills
+                Welcome to my Portfolio Website. Here I showcase my projects and skills.
             </HeadingSub>
         </div>
     )

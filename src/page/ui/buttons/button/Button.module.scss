@@ -54,6 +54,10 @@
 
 }
 
+.loading {
+    @apply animate-pulse;
+}
+
 .hamburger {
     @apply flex flex-col text-main-200;
     gap: .25rem;

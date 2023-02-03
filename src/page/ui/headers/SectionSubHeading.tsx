@@ -8,7 +8,7 @@ const SectionSubHeading: FC<ISectionSubHeading> = ({ textAccent, textMain, accen
             {...{ ...rest }}
             className={styles.section_subheading}
         >
-            <span className={styles[accentColor]} >{textAccent}.</span> <br></br> {textMain}
+            <span className={styles[accentColor]} >{textAccent}</span> <br></br> {textMain}
         </p>
     )
 }

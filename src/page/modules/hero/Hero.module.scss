@@ -1,9 +1,9 @@
 
 
 .section_wrapper {
-    @apply grid;
+    @apply grid gap-0;
     grid-template-columns:  min-content 1fr;
-    grid-template-rows: 1fr 5rem 1fr 1fr;
+    grid-template-rows: 1fr 5rem 1fr 5rem;
   
     >div:first-child {
         @apply justify-self-end;

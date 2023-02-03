@@ -1,19 +1,20 @@
 import { FC, PropsWithChildren } from 'react'
 import { IoArrowForward } from 'react-icons/io5';
-import { IButton } from './Button.interface'
+import { IButton, IButtonRefer } from './Button.interface'
 import styles from './Button.module.scss';
 
-export const ButtonRefer: FC<PropsWithChildren<IButton>> = ({
+export const ButtonRefer: FC<PropsWithChildren<IButtonRefer>> = ({
     children,
     className,
+    isLoading,
     ...rest
 }) => {
     return (
         <button
-            className={styles.button_refer}
+            className={`${styles.button_refer} ${isLoading ? styles.loading : ''}`}
             {...rest}
         >
-            {children}
+            {isLoading ? 'Loading' : children}
             <IoArrowForward />
         </button>
     )

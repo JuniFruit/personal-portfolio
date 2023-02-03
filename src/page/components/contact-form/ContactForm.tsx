@@ -7,7 +7,7 @@ import { validEmail } from '../../utils/format.utils';
 import { IContactFields, IContactForm } from './ContactForm.interface';
 import styles from './ContactForm.module.scss';
 
-const ContactForm: FC<IContactForm> = ({ onSubmitForm }) => {
+const ContactForm: FC<IContactForm> = ({ onSubmitForm, isLoading }) => {
 
     const { register, formState: { errors }, handleSubmit } = useForm<IContactFields>({
         mode: "onChange"
@@ -66,7 +66,7 @@ const ContactForm: FC<IContactForm> = ({ onSubmitForm }) => {
                 maxLength={500}
                 error={errors.message}
             />
-            <ButtonRefer>
+            <ButtonRefer isLoading={isLoading}>
                 Submit
             </ButtonRefer>
         </form>
