@@ -4,6 +4,7 @@
     @apply flex flex-col border-r border-gray-700;
     .editor_header {
         @apply bg-box-bg h-12 flex gap-2 items-end justify-start pl-2;
+      
         >span {
             @apply text-main-200 opacity-70 py-1 px-2 text-tiny;
             font-weight: 200;

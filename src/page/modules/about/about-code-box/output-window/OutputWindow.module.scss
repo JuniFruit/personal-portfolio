@@ -3,7 +3,8 @@
 .wrapper {
     @apply flex flex-col border-r border-gray-700;
     .header {
-        @apply bg-box-bg h-12 flex  items-center justify-between px-5 py-1;       
+        @apply bg-box-bg flex  items-center justify-between px-5 py-1;       
+        height: 3.2rem;
     }
 
     .placeholder {
