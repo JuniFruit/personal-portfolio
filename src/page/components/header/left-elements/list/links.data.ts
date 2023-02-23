@@ -14,7 +14,7 @@ export const data: ILinkIconDataItem[] = [
   },
   {
     title: "LinkedIn",
-    href: "https://www.linkedin.com/in/artyom-nebyansky-494427240/",
+    href: "https://www.linkedin.com/in/artyom-nebyansky/",
     icon: IoLogoLinkedin,
   },
 ];

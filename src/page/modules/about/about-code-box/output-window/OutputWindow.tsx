@@ -12,7 +12,7 @@ const AboutOutputWindow: FC = () => {
           <IoLogoGithub />
         </IconLink>
         <IconLink
-          href="https://www.linkedin.com/in/artyom-nebyansky-494427240/"
+          href="https://www.linkedin.com/in/artyom-nebyansky/"
           target={"_blank"}
         >
           <IoLogoLinkedin />
