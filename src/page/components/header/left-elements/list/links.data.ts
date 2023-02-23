@@ -3,20 +3,18 @@ import { IconType } from "react-icons/lib";
 import { ILinkDataItem } from "../../right-elements/list/Links.interface";
 
 export interface ILinkIconDataItem extends ILinkDataItem {
-    icon: IconType
+  icon: IconType;
 }
 
 export const data: ILinkIconDataItem[] = [
-    {
-        title: "GitHub",
-        href: "https://github.com/JuniFruit",
-        icon: IoLogoGithub
-    },
-    {
-        title: "LinkedIn",
-        href: "https://www.linkedin.com/in/artyom-nebianskii-494427240/",
-        icon: IoLogoLinkedin
-    },
-
-
-]
+  {
+    title: "GitHub",
+    href: "https://github.com/JuniFruit",
+    icon: IoLogoGithub,
+  },
+  {
+    title: "LinkedIn",
+    href: "https://www.linkedin.com/in/artyom-nebyansky-494427240/",
+    icon: IoLogoLinkedin,
+  },
+];
