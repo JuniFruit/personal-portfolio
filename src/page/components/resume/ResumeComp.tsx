@@ -8,7 +8,7 @@ const ResumeComp: FC = () => {
   return (
     <div className={styles.wrapper}>
       <HeadingSection>You can download my CV right away</HeadingSection>
-      <ButtonLink href="https://drive.google.com/uc?export=download&id=1YXkVSkyqtinwLVfi3yrlopqTtVL28chH">
+      <ButtonLink href="https://drive.google.com/uc?export=download&id=1XDLSdzUIt7wRtXNoZiASshnIQSQJ_mKi">
         Download
       </ButtonLink>
     </div>
