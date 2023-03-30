@@ -7,15 +7,6 @@ export interface IProjectItemData extends IProjectItem {
 
 export const projectList: IProjectItemData[] = [
   {
-    title: "Ultimate Chess",
-    shortDescription:
-      "Full stack Multiplayer Chess Game featuring brand new Ultimate mode, where you can use magic spells",
-    link: "https://ultimate-chess.onrender.com/",
-    gitHubLink: "https://github.com/JuniFruit/Ultimate-chess",
-    preview:
-      "https://drive.google.com/uc?export=download&id=1Q5ITYUYxYLOE0IvNxFqXbT9jGAQQZpjv",
-  },
-  {
     title: "MeTube",
     shortDescription:
       "Full stack broadcasting app, where you can watch, upload, like and comment videos, follow other channels",
@@ -23,6 +14,15 @@ export const projectList: IProjectItemData[] = [
     gitHubLink: "https://github.com/JuniFruit/Video-hosting",
     preview:
       "https://drive.google.com/uc?export=download&id=15T3CB3a7GriN6B2ePW6S4VasAKLiNm8E",
+  },
+  {
+    title: "Ultimate Chess",
+    shortDescription:
+      "Full stack Multiplayer Chess Game featuring brand new Ultimate mode, where you can use magic spells",
+    link: "https://ultimate-chess.onrender.com/",
+    gitHubLink: "https://github.com/JuniFruit/Ultimate-chess",
+    preview:
+      "https://drive.google.com/uc?export=download&id=1Q5ITYUYxYLOE0IvNxFqXbT9jGAQQZpjv",
   },
   {
     title: "Mini-Reddit",
